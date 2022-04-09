@@ -53,10 +53,14 @@ section article img{
 }
 
 footer{
-    flex: 0 0 auto;
+      flex: 0 0 auto;
+   
     background-color: black;
-    color: white;
     text-align: center;
+    padding: 1em;
+    bottom: 0;
+    color: white;
+    margin-top: auto;
  }
 
 
@@ -81,13 +85,20 @@ footer{
  .main-footer{
     grid-area:footer;
  }
- .map{
-    grid-area:mapa;
+ .principal{
+    grid-area:principal;
+ }
+ .secundario{
+    grid-area:secundario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
  }
 
  section article h2{
      text-align: center;
  }
+ 
 
  .wrapper{
      display: grid;
@@ -95,7 +106,7 @@ footer{
      grid-template-areas: 
      "header"
      "nav"
-     "mapa"
+     "principal"
      "contenido1"
      "contenido2"
      "footer";
@@ -108,7 +119,8 @@ footer{
          grid-template-areas: 
          "header"
          "nav"
-         "mapa"
+         "principal"
+         "secundario"
          "contenido1"
          "contenido2"
          "footer";
@@ -118,13 +130,14 @@ footer{
  @media(min-width:900px)
  {
      .wrapper{
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
          grid-template-areas: 
-         "header header"
-         "nav nav"
-         "mapa mapa"
-         "contenido1 contenido2"
-         "footer footer";
+         "header header header header header"
+         "nav nav nav nav nav"
+         "principal principal principal principal principal"
+         ". secundario secundario secundario ."
+         ". contenido1 . contenido2 ."
+         "footer footer footer footer footer";
      }
  }
 
