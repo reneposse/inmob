@@ -95,6 +95,15 @@ footer{
     justify-content: center;
  }
 
+ .tasaciones{
+    grid-area:secundario;
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ 
+
  section article h2{
      text-align: center;
  }
@@ -125,7 +134,14 @@ footer{
          "contenido2"
          "footer";
      }
- }
+     .tasaciones{
+        grid-area:secundario;
+        display: flex;
+        align-items: flex-start; 
+        flex-direction: row;
+        justify-content: space-between;
+     }
+}
 
  @media(min-width:900px)
  {
