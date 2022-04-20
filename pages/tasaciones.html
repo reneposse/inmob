@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-	<title>Tasaciones</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/casa_icon.jpg">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<title>Tasaciones POSSE</title>
+	</head>
 
 <body>
-	<div class="wrapper">
-		<header>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="quienesSomos.html">Quienes Somos</a></li>
-					<li><a href="#">Tasaciones</a></li>
-					<li><a href="buscarEnMapa.html">Buscar en el mapa</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-				</ul>
-			</nav>
+	<div class="container-fluid">
+		<header>  
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#">InmobiliariaPosse</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+					  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+					  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+					  <a class="nav-link active" href="#">Tasaciones</a> 
+					  <a class="nav-link" href="buscarEnMapa.html">Buscar en el mapa</a> 
+					  <a class="nav-link" href="contacto.html">Contacto</a> 
+					</div>
+				  </div>
+				</div>
+			  </nav>
 		</header>
-			<article class="tasaciones">
-				<img src="../img/tasacion.jpg" alt="imagen tasacion">
-				<div>
-					<h1>Tasaciones</h1>
-					<p >Régimen de derechos, aranceles y gastos
+		 
+
+
+		<div class="card mb-3 text center">
+			<div class="row g-0">
+			  <div class="col-md-4">
+				<img class="img-fluid"  src="../img/tasacion.jpg" class="img-fluid rounded-start" alt="Tasaciones">
+			  </div>
+			  <div class="col-md-8">
+				<div class="card-body">
+				  <h5 class="card-title">Tasaciones</h5>
+				  <p class="card-text">
+					  
+
+					 Régimen de derechos, aranceles y gastos
 						Derecho de tasación: deberá ser abonado por cada bien que se solicite valuar, en oportunidad de
 						ingresar el pedido y no es deducible del arancel. Cuando se solicite valuar más de un bien
 						mueble ubicado en un solo inmueble, se pagará un solo derecho.
@@ -48,19 +65,25 @@
 						descentralizada, así como los de los Poderes Legislativo y Judicial y los que se incorporen o
 						transfieran a esas jurisdicciones.
 
-						Gastos: los correspondientes a pasajes, viáticos, movilidad y eventuales serán abonados por la
-						entidad solicitante, en forma anticipada a la fecha de partida de la inspección y de acuerdo con
-						lo normado en el régimen aplicable al personal del organismo y las particularidades que
-						determine el mismo. En los casos de tasaciones judiciales los mismos serán abonados por el
-						Tribunal de Tasaciones de la Nación y su monto integrará las costas.</p>
+					 </p>
 
+				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
-					
-				</article>
+			  </div>
+			</div>
+		  </div>
 	</div>
-	<footer class="footer">
-		<h3>Inmobiliaria Posse</h3>
-	</footer>
+	<!-- inicio de footer -->
+	<footer class="bg-dark text-center text-white">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  © 2022 Copyright:
+		  <a class="text-white" href="#">PosseSoft</a>
+		</div>
+		<!-- Copyright -->
+	  </footer>
+
+	<script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

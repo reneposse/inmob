@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-	<title>Buscar en el Mapa</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/casa_icon.jpg">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<title>Buscar en el Mapa</title>
+	</head>
 <body>
-	<div class="wrapper">
-		<header>
+	<div class="container-fluid">
+		<header>  
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#">InmobiliariaPosse</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+					  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+					  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+					  <a class="nav-link" href="tasaciones.html">Tasaciones</a> 
+					  <a class="nav-link active" href="buscarEnMapa.html">Buscar en el mapa</a> 
+					  <a class="nav-link" href="contacto.html">Contacto</a> 
+					</div>
+				  </div>
+				</div>
+			  </nav>
+		</header>
 
-			<nav class="main-nav">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="quienesSomos.html">Quienes Somos</a></li>
-				<li><a href="tasaciones.html">Tasaciones</a></li>
-				<li><a href="#">Buscar en el mapa</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-			</ul>
-		</nav>
-	</header>
-	 <div class="secundario">
-	<h1 class="titulos">BUSCAR EN EL MAPA</h1>
-	<section>
-		<article>
+
+		<div class="card mb-3">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.580601619808!2d-57.5736739!3d-38.0087366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x643af57e4933f20!2sCasa%20del%20Puente!5e0!3m2!1ses-419!2sar!4v1619616783943!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-		</article>
-	</section>
-</div>
+			<div class="card-body">
+			  <h5 class="card-title">Buscar en el Mapa</h5>
+			  
+			</div>
+		  </div>
+
+
+	 
+			
+		 
 	</div>
-	<footer class="footer">
-		<h3>Inmobiliaria Posse</h3>
-	</footer>
+	<!-- inicio de footer -->
+	<footer class="bg-dark text-center text-white">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  © 2022 Copyright:
+		  <a class="text-white" href="#">PosseSoft</a>
+		</div>
+		<!-- Copyright -->
+	  </footer>
+
+	<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

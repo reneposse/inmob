@@ -4,29 +4,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+	<link rel="shortcut icon" href="img/casa_icon.jpg">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<title>Inmobiliaria POSSE</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header>
-
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="pages/quienesSomos.html">Quienes Somos</a></li>
-					<li><a href="pages/tasaciones.html">Tasaciones</a></li>
-					<li><a href="pages/buscarEnMapa.html">Buscar en el mapa</a></li>
-					<li><a href="pages/contacto.html">Contacto</a></li>
-				</ul>
-				</ul>
-			</nav>
-
+	<div class="container-fluid">
+		<header>  
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#">InmobiliariaPosse</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+					  <a class="nav-link active" aria-current="page" href="#">Home</a>
+					  <a class="nav-link" href="pages/quienesSomos.html">Quienes Somos</a>
+					  <a class="nav-link" href="pages/tasaciones.html">Tasaciones</a> 
+					  <a class="nav-link" href="pages/buscarEnMapa.html">Buscar en el mapa</a> 
+					  <a class="nav-link" href="pages/contacto.html">Contacto</a> 
+					</div>
+				  </div>
+				</div>
+			  </nav>
 		</header>
 
 		<section class="principal">
@@ -36,29 +41,64 @@
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section>
 		
-		<section class="contentCol1">
-				<article>
-					<h2>casa</h2>
-					<img src="img/casa1.jpg" alt="casa1">
-					<p>descripcion</p>
-				</article>
-		</section>
-		<section class="contentCol2">
-			<article>
-				<h2>casa2</h2>
-				<img src="img/casa2.jpg" alt="casa2">
-				<p>descripcion</p>
-			</article>
-		</section>
+		<div class="row">
+			<div class="col-sm-6">
+			  <div class="card text-center">
+				<img src="img/casa1.jpg" style="height: 25rem;" class="card-img-top" alt="casa 1">
+				<div class="card-body">
+				  <h5 class="card-title">Casa estilo futurista</h5>
+				  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde debitis nihil commodi error itaque nobis.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-6">
+			  <div class="card text-center">
+				<img src="img/casa2.jpg" style="height: 25rem;" class="card-img-top" alt="casa 2">
+				<div class="card-body">
+				  <h5 class="card-title">Casa vanguardista</h5>
+				  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, consectetur cumque. A voluptate explicabo quis provident voluptatum incidunt voluptas sequi iste non. </p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card text-center">
+				  <img src="img/casa1.jpg" style="height: 25rem;" class="card-img-top" alt="casa 1">
+				  <div class="card-body">
+					<h5 class="card-title">Casa estilo futurista</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde debitis nihil commodi error itaque nobis.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card text-center">
+				  <img src="img/casa2.jpg" style="height: 25rem;" class="card-img-top" alt="casa 2">
+				  <div class="card-body">
+					<h5 class="card-title">Casa vanguardista</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, consectetur cumque. A voluptate explicabo quis provident voluptatum incidunt voluptas sequi iste non. </p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+
+		
 		
 
 	</div>
 	<!-- inicio de footer -->
-	<footer class="main-footer">
-		<h3>Inmobiliaria Posse</h3>
-	</footer>
+	<footer class="bg-dark text-center text-white">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  © 2022 Copyright:
+		  <a class="text-white" href="#">PosseSoft</a>
+		</div>
+		<!-- Copyright -->
+	  </footer>
 
-
+	<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
